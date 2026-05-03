@@ -21,7 +21,7 @@ export default {
         mono: ['Geist Mono', 'ui-monospace', 'monospace'],
       },
       fontSize: {
-        'display': ['clamp(2.5rem, 5vw, 4rem)', { lineHeight: '1.05', letterSpacing: '-0.025em' }],
+        'display': ['clamp(2rem, 5vw, 4rem)', { lineHeight: '1.05', letterSpacing: '-0.025em' }],
       },
       animation: {
         'fade-in': 'fadeIn 200ms ease-out',

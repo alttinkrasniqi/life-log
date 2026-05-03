@@ -93,14 +93,14 @@ export function Settings() {
   };
 
   return (
-    <div className="px-10 py-10 max-w-[800px]">
-      <header className="mb-12">
+    <div className="px-5 py-6 md:px-10 md:py-10 max-w-[800px]">
+      <header className="mb-8 md:mb-12">
         <div className="text-[10px] uppercase tracking-[0.25em] text-text-3 mb-3">Settings</div>
         <h1 className="font-serif text-display tracking-tight italic">Manage your data</h1>
       </header>
 
       {/* Stats */}
-      <section className="mb-12">
+      <section className="mb-8 md:mb-12">
         <h2 className="text-[10px] uppercase tracking-[0.25em] text-text-3 mb-4">Storage</h2>
         <div className="bg-surface border border-border rounded-xl p-5 grid grid-cols-2 md:grid-cols-4 gap-6">
           <div>
@@ -127,7 +127,7 @@ export function Settings() {
       </section>
 
       {/* Backup */}
-      <section className="mb-12">
+      <section className="mb-8 md:mb-12">
         <h2 className="text-[10px] uppercase tracking-[0.25em] text-text-3 mb-4">Backup</h2>
         <div className="space-y-3">
           <button

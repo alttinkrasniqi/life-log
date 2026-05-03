@@ -55,8 +55,8 @@ export function StatCard({
       <div className="mt-3 flex items-baseline gap-1.5">
         <div
           className={cn(
-            'leading-none',
-            serif ? 'font-serif text-[42px] tracking-tight' : 'text-3xl font-medium',
+            'leading-none break-all',
+            serif ? 'font-serif text-[34px] md:text-[42px] tracking-tight' : 'text-2xl md:text-3xl font-medium',
           )}
         >
           {value}

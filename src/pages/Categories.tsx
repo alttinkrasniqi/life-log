@@ -20,7 +20,7 @@ export function Categories() {
   );
 
   return (
-    <div className="px-10 py-10 max-w-[1100px]">
+    <div className="px-5 py-6 md:px-10 md:py-10 max-w-[1100px]">
       <header className="flex items-end justify-between mb-10 gap-4 flex-wrap">
         <div>
           <div className="text-[10px] uppercase tracking-[0.25em] text-text-3 mb-3">

@@ -63,11 +63,11 @@ export function Today() {
   }, [entries, metrics, categories, range.start, range.end]);
 
   return (
-    <div className="px-10 py-10 max-w-[1100px]">
+    <div className="px-5 py-6 md:px-10 md:py-10 max-w-[1100px]">
       {/* Header */}
-      <header className="mb-12">
+      <header className="mb-8 md:mb-8 md:mb-12">
         <div className="text-[10px] uppercase tracking-[0.25em] text-text-3 mb-3">Today</div>
-        <h1 className="font-serif text-display tracking-tight">
+        <h1 className="font-serif text-display tracking-tight break-words">
           <span className="italic">{fmtFullDate(new Date()).split(',')[0]}</span>
           <span className="text-text-2 not-italic font-light">
             ,{fmtFullDate(new Date()).split(',').slice(1).join(',')}
@@ -77,7 +77,7 @@ export function Today() {
 
       {/* Today's category snapshot */}
       {todayTotalsByCategory.length > 0 && (
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-3 mb-12">
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-3 mb-8 md:mb-12">
           {todayTotalsByCategory.map((c) => (
             <div
               key={c.category.id}
@@ -103,7 +103,7 @@ export function Today() {
       )}
 
       {/* Quick add */}
-      <section className="mb-12">
+      <section className="mb-8 md:mb-12">
         <div className="flex items-center justify-between mb-4">
           <h2 className="text-[10px] uppercase tracking-[0.25em] text-text-3">Quick log</h2>
           <span className="text-[10px] text-text-3">tap to log</span>

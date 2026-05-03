@@ -48,7 +48,7 @@ export function CategoryDetail() {
 
   if (!category) {
     return (
-      <div className="px-10 py-10">
+      <div className="px-5 py-6 md:px-10 md:py-10">
         <div className="text-text-2">Category not found.</div>
         <Link to="/categories" className="text-sm text-accent mt-4 inline-block">
           ← Back to categories
@@ -65,7 +65,7 @@ export function CategoryDetail() {
   const monthRange = getPeriodRange('month');
 
   return (
-    <div className="px-10 py-10 max-w-[1100px]">
+    <div className="px-5 py-6 md:px-10 md:py-10 max-w-[1100px]">
       <button
         onClick={() => navigate(-1)}
         className="flex items-center gap-1.5 text-xs text-text-3 hover:text-text-2 mb-6"
@@ -74,7 +74,7 @@ export function CategoryDetail() {
       </button>
 
       {/* Header */}
-      <header className="flex items-start justify-between mb-12 gap-4">
+      <header className="flex items-start justify-between mb-8 md:mb-12 gap-4">
         <div className="flex items-start gap-4">
           <div
             className="w-12 h-12 rounded-xl flex items-center justify-center shrink-0"
@@ -98,7 +98,7 @@ export function CategoryDetail() {
       </header>
 
       {/* Metrics grid */}
-      <section className="mb-12">
+      <section className="mb-8 md:mb-12">
         <div className="flex items-center justify-between mb-4">
           <h2 className="text-[10px] uppercase tracking-[0.25em] text-text-3">Metrics</h2>
           <button

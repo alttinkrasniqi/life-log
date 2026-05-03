@@ -27,7 +27,7 @@ export function Insights() {
   const totalEntries = allEntries.length;
 
   return (
-    <div className="px-10 py-10 max-w-[1200px]">
+    <div className="px-5 py-6 md:px-10 md:py-10 max-w-[1200px]">
       {/* Header */}
       <header className="flex items-end justify-between mb-10 gap-4 flex-wrap">
         <div>
@@ -40,7 +40,7 @@ export function Insights() {
       </header>
 
       {totalEntries === 0 && (
-        <div className="border border-dashed border-border rounded-xl py-16 text-center mb-12">
+        <div className="border border-dashed border-border rounded-xl py-16 text-center mb-8 md:mb-12">
           <div className="font-serif text-2xl italic text-text-2 mb-2">
             Nothing to analyze yet
           </div>
@@ -123,7 +123,7 @@ function CategorySection({ category, metrics, entries, period }: CategorySection
   }>;
 
   return (
-    <section className="mb-16">
+    <section className="mb-10 md:mb-16">
       {/* Section header */}
       <div className="flex items-center justify-between mb-5">
         <Link

@@ -112,7 +112,7 @@ export function MetricDetail() {
 
   if (!metric || !category) {
     return (
-      <div className="px-10 py-10">
+      <div className="px-5 py-6 md:px-10 md:py-10">
         <div className="text-text-2">Metric not found.</div>
         <Link to="/categories" className="text-sm text-accent mt-4 inline-block">
           ← Back to categories
@@ -124,7 +124,7 @@ export function MetricDetail() {
   const positive = metric.direction === 'up' ? 'up' : 'down';
 
   return (
-    <div className="px-10 py-10 max-w-[1100px]">
+    <div className="px-5 py-6 md:px-10 md:py-10 max-w-[1100px]">
       <button
         onClick={() => navigate(-1)}
         className="flex items-center gap-1.5 text-xs text-text-3 hover:text-text-2 mb-6"
@@ -177,7 +177,7 @@ export function MetricDetail() {
               {period === 'all' ? 'All-time' : `This ${period}`}
             </div>
             <div className="flex items-baseline gap-3">
-              <div className="font-serif text-[64px] leading-none tracking-tight">
+              <div className="font-serif text-[48px] md:text-[64px] leading-none tracking-tight break-all">
                 {fmtValueRaw(headline, metric)}
               </div>
               {metric.unit && metric.type !== 'boolean' && (
